@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"gce","Source":"./gce","Dir":"gce"},{"Key":"gce.vpc","Source":"../vpc","Dir":"vpc"},{"Key":"vpc","Source":"./vpc","Dir":"vpc"}]}
+{"Modules":[{"Key":"gce.vpc","Source":"../vpc","Dir":"vpc"},{"Key":"vpc","Source":"./vpc","Dir":"vpc"},{"Key":"","Source":"","Dir":"."},{"Key":"gce","Source":"./gce","Dir":"gce"}]}

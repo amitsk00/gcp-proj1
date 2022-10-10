@@ -85,3 +85,15 @@ variable "lb_subnet_1" {
         default = "10.26.5.0/24"
     } 
 
+variable "network" {
+    description = "VPC network for VM"
+    
+}
+variable "subnet1" {
+    description = "Subnet 1 inside VPC"
+    
+}
+variable "subnet2" {
+    description = "Subnet 2 inside VPC"
+
+}

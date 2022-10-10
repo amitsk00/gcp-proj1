@@ -31,14 +31,12 @@ module "gce" {
   company               = var.company
   sa1 = var.sa1
   project_id = var.project_id
-
   region = var.region
   machine_type = var.machine_type
   zone = var.zone
   image = var.image 
   scopes_web = var.scopes_web
   public_key = var.public_key
-
   network = module.vpc.vpc_self_link
   subnet1 = module.vpc.subnet1_self_link
   subnet2 = module.vpc.subnet2_self_link
