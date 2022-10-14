@@ -40,9 +40,9 @@ module "gce" {
   network = module.vpc.vpc_self_link
   subnet1 = module.vpc.subnet1_self_link
   subnet2 = module.vpc.subnet2_self_link
-
-
 }
+
+
 # module "ue1" {
 #   source                = "../modules/ue1"
 #   network_self_link     = "${module.vpc.out_vpc_self_link}"
