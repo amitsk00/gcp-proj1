@@ -1,12 +1,12 @@
 module "vpc" {
   source = "../vpc" 
   project_id = var.project_id
-  env                   = var.env
-  company               = var.company
-  net1_region1_subnet = var.net1_region1_subnet
-  net1_region2_subnet = var.net1_region2_subnet
+  # env                   = var.env
+  # company               = var.company
+  # net1_region1_subnet = var.net1_region1_subnet
+  # net1_region2_subnet = var.net1_region2_subnet
   region = var.region
-  lb_subnet_1 = var.lb_subnet_1
+  # lb_subnet_1 = var.lb_subnet_1
 
 }
 
@@ -50,10 +50,10 @@ resource "google_compute_instance" "default" {
   }
   
   depends_on = [ 
-    # module.vpc.google_compute_network.vpc,
-    # module.vpc.google_compute_subnetwork.subnet1
-    module.vpc
+    module.vpc 
 
+    # module.vpc.google_compute_network.vpc ,
+    # module.vpc.google_compute_subnetwork.subnet1
   ]
 }
 

@@ -16,3 +16,10 @@ gcloud config set compute/zone  us-central1-a
 ./13_sa_roles.sh
 
 cd  ./terra-main
+
+terraform init 
+
+terraform plan --out plan2
+
+terraform apply
+
